@@ -1,0 +1,60 @@
+// Talk three area start here ***
+.talk-three {
+	&-area {
+		overflow: hidden;
+		@include background;
+	}
+	&__form {
+		background-color: #ffffffb2;
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		padding-left: 90px;
+		padding-right: 90px;
+		@include media-breakpoint-down(xl){
+            padding-left: 30px;
+			padding-right: 30px;
+			.section-header{
+				h2{
+					br{
+						display: none;
+					}
+				}
+			}
+        }
+		form {
+			max-width: 850px;
+			input,
+			textarea {
+				width: 100%;
+				padding: 14px 20px;
+				border: 1px solid transparent;
+				background-color: #ffffff99;
+				border-radius: 30px;
+				&::placeholder {
+					color: var(--theme-color2);
+				}
+				&:focus {
+					border: 1px solid var(--border);
+				}
+			}
+			textarea {
+				height: 240px;
+				resize: none;
+				border-radius: 20px;
+			}
+		}
+		&.dark-area {
+			background-color: #101010b2;
+			form {
+				max-width: 850px;
+				input,
+				textarea {
+					&::placeholder {
+						color: #131313;
+					}
+				}
+			}
+		}
+	}
+}
+// Talk three area end here ***

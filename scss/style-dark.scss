@@ -1,0 +1,415 @@
+//Root for dark
+:root {
+  --dark-color1: #232331;
+  --dark-color2: #292738;
+  --dark-color3: #2b242b;
+}
+
+
+//dark color1
+body,
+.play-now-two:before,
+.about-section-four .experience .icon,
+.about-section-three .content-column .content-box .info-box::before,
+.training-block-two .info-box,
+.training-block-two .info-box,
+.subscribe-form .form-group input[type=email],
+.training-block .info-box:hover,
+.feature-block .content-box,
+.testimonial-block .content-box .rating,
+.why-choose-us .content-column .info-box .read-more,
+.training-block .info-box .read-more,
+.service-block .image-box .icon-box,
+.service-block .content-box .read-more,
+.sticky-header.fixed-header,
+.page-wrapper,
+.countries-section-three .outer-box,
+.service-block-two .info-box,
+.service-block-four .info-box,
+.testimonial-block-four .inner-box:before
+{
+  background-color: var(--dark-color1);
+}
+
+.about-section-four .image-column .inner-column .image-2,
+.feature-block-five .inner-box
+{
+  border-color: var(--theme-color1);
+}
+.service-block-eight .inner-box:hover .content-box .btn-view-more
+{
+  color: var(--theme-color1);
+}
+.features-section-seven .feature-block-five .inner-box:hover .content-box .title a,
+.service-block-eight .inner-box:hover .content-box .title a
+{
+  color: var(--dark-color1);
+}
+//dark color 2
+.about-section .experience,
+.about-section .experience .inner::before,
+.header-style-one .header-lower .logo-box,
+.news-block-two .inner-box:hover .date:before,  
+.feature-block-two .inner-box,
+.testimonial-block-two .inner-box,
+.team-block .share-icon,
+.call-to-action .info-btn:hover,
+.team-block .image-box:before,
+.process-block .info-box,
+.about-section-four .experience,
+.country-block-two .info,
+.about-section-three .content-column .content-box .info-box,
+.training-section-two .outer-box,
+.training-section .bg-layer,
+.features-section .outer-box,
+.news-block .content-box,
+.testimonial-block .content-box,
+.why-choose-us,
+.counter-block .icon,
+.banner-box-two .caption,
+.accordion-box .block,
+.faqs-section:before,
+.training-block .info-box,
+.about-section-two .image-column .image-box .float-text,
+.about-section-two:before,
+.country-block .inner-box,
+.service-block .inner-box,
+.feature-block .inner-box,
+.header-top .inner-container,
+.feature-block .inner-box:before,
+.testimonial-section .bg-layer,
+.about-section .content-column .features-list .features-list-item .inner,
+.service-block-six .inner-box,
+.header-style-one .header-top,
+.accordion-box .block .acc-btn,
+.accordion-box .block .acc-btn.active,
+.accordion-box .block .acc-btn.active .icon,
+.team-block .social-links,
+.country-block-three .inner-box,
+.countries-section-three .bottom-text .inner,
+.services-section-two .outer-box,
+.service-block-two .info-box .read-more,
+.about-section-two .image-column .inner-column:before,
+.about-section-two .content-column .content-box .info-box .icon,
+.about-section-three .experience,
+.news-carousel-one.default-nav .owl-nav .owl-prev,
+.news-carousel-one.default-nav .owl-nav .owl-next,
+.feature-block-two .title-area,
+.about-section-five:before,
+.about-section-five .image-column .image-box .float-text,
+.skills .skill-item .skill-bar .bar-inner,
+.why-choose-us-two .info-box,
+.service-block-four .info-box .read-more,
+.services-section-four .bg-layer,
+.faqs-section.style-two .accordion-box .block .acc-btn,
+.testimonial-block-three .inner-box,
+.banner-section-four .slide-item .bg-image:after,
+.feature-block-five .inner-box,
+.about-section-six .content-column .info-box .icon:after,
+.banner-box-three .inner-box,
+.feature-block-six .inner-box .icon,
+.service-block-five .overlay-content,
+.service-block-five .read-more,
+.process-block-two .icon-box .icon,
+.news-block-four .content-box,
+.clients-section.style-three,
+.countries-section-three,
+.service-section-eight,
+.project-section-one.home-style-seven,
+.contact-section.home-style-seven .inner-container #contact_form,
+.header-style-one.style-light .header-top,
+.banner-section-four.home-style-nine,
+.testimonial-section-three.home-style-nine .carousel-outer .testimonial-block-four .inner-box
+{
+  background-color: var(--dark-color2);
+}
+.feature-block-four .inner-box .count,
+.clients-section.style-four,
+.about-section-six .image-column .image-2,
+.about-section-six .content-column .author-info .thumb img,
+.process-block-two .icon-box:before,
+.news-block-four .content-box
+{
+  border-color: var(--dark-color2);
+}
+.about-section-three .experience:before{
+  border-right-color: var(--dark-color2);
+}
+
+.training-block-two .info-box .read-more {
+  background-color: var(--dark-color3);
+}
+
+// black color
+.btn-style-three,
+.work-tabs .tab-buttons .tab-btn{
+  background-color: #000;
+}
+
+.feature-block .icon-box {
+  background-color: var(--bg-theme-color1);
+}
+.about-section-six .image-column .image-box:before{
+  background-color: var(--bg-theme-color2);
+}
+
+.blockquote-one {
+	background-color: #323232;
+}
+
+.process-block .inner-box:hover .info-box{
+  background-color: #231F3A
+}
+
+.training-section-two .outer-box{
+  background: #232331;
+}
+
+.training-section-two .outer-box:before{
+  background: #292738;
+}
+
+.about-section .content-column .info-btn i {
+	background-color: #282a2e;
+}
+
+.service-block .read-more i {
+	color: #fff;
+	box-shadow: 0 10px 30px rgba(255, 255, 255, .12);
+}
+
+.about-section-two .content-column .inner-column .list-style-two li {
+	color: #6a6a6a,
+}
+
+.skills .skill-item .skill-bar .bar-inner {
+  color: #313b4c,
+}
+
+//border dark color 1
+.service-block .inner-box {
+  border-color: var(--dark-color1);
+}
+
+//border dark color 2
+//border color
+
+.clients-section.alternate,
+.pricing-block.style-two .price-box
+{
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.testimonial-block .content-box{
+  border-color: #232331;
+}
+
+.news-block .content-box {
+  border-color: #292738;
+}
+
+.testimonial-block .content-box:before{
+  border-bottom-color: #292738;
+}
+
+.blockquote-one {
+	color: #8d8d8d,
+}
+
+//text color
+.testimonial-block-two .content-box .name,
+.call-to-action .info-btn:hover,
+.team-block .info-box .name,
+.training-section-two .video-box .sub-title,
+.skills .skill-item .skill-header .skill-title,
+.testimonial-block .content-box .name,
+.why-choose-us .content-column .info-box .title,
+.counter-block .count-box,
+.counter-block .count-box .count-text,
+.accordion-box .block .acc-btn,
+.service-block .content-box .read-more i,
+.service-block .content-box .read-more,
+.about-block:hover .icon,
+.about-block .icon:hover,
+.about-block .title,
+.feature-block .content-box .title,
+.title a,
+.sec-title h2,
+.about-section .content-column .info-box .title,
+.about-section .content-column .features-list .features-list-item .inner,
+.service-block-six .title a,
+.social-icon-one li a,
+.accordion-box .block .acc-btn.active .icon,
+.faqs-section .content-column .info-box .inner .title,
+.countries-section-three .bottom-text .inner span,
+.about-section-two .content-column .content-box .info-box .title,
+.about-section-two .content-column .content-box .title,
+.about-section-three .experience strong,
+.feature-block-two .title-area .feature-title,
+.about-section-four .content-column .btn-box .info-btn,
+.about-section-five .image-column .image-box .float-text,
+.why-choose-us-two .info-box .count,
+.service-block-four .info-box .read-more,
+.faqs-section.style-two .accordion-box .block .acc-btn.active,
+.accordion-box .block .acc-btn .icon,
+.accordion-box .block .acc-btn.active,
+.testimonial-block-three .content-box .name,
+.banner-section-four .content-box .title,
+.feature-block-five .content-box .title a,
+.banner-box-three .inner-box .title-column .title,
+.contact-details__info.style-two li .text a,
+.why-choose-us .content-column .info-box .read-more,
+.service-block-eight .inner-box .content-box .btn-view-more,
+.team-block .social-links a:hover,
+.banner-section-four.home-style-nine .swiper-slide .content-box .inner .title,
+.banner-section-four.home-style-nine .swiper-slide .content-box .inner .text,
+.banner-box-two .caption,
+.testimonial-block-four .name,
+.features-section-seven .feature-block-five .inner-box .content-box .title a,
+.about-section-six .content-column .author-info .name,
+.process-block-two .info-box .title
+{
+  color: #fff;
+}
+.banner-section-four.home-style-nine .swiper-slide .content-box .inner .transparent-text
+{
+  -webkit-text-stroke-color: rgb(255 255 255 / 25%);
+}
+.banner-section-four .content-box .text,
+.list-style-three li,
+.list-style-two li
+{
+  color: rgba(255,255,255, .5);
+}
+.about-section .content-column .info-box:hover .title {
+  color: var(--dark-color1);
+}
+
+.news-section-two .icon-object-1,
+.about-section-three .icon-object-4,
+.about-section-three .icon-object-1,
+.team-section .icon-object-1,
+.process-section .icon-object-1,
+.why-choose-us .image-column .plane,
+.faqs-section .icon-object-2,
+.services-section .icon-object-2,
+.features-section .icon-object-1 {
+  opacity: 0.3;
+}
+
+.clients-section.style-two,
+.faq-block,
+.service-block-eight .inner-box
+{
+  border-color: #505050;
+}
+
+.why-choose-us .content-column .info-box,
+.country-block-three .content .flag,
+.feature-block .content {
+	border-color: #404040;
+}
+
+.accordion-box .block .acc-btn .icon {
+  background-color: #0d182c;
+}
+
+.news-block .content-box .read-more,
+.accordion-box .block,
+.accordion-box .block.active-block,
+.accordion-box .block .acc-content .content {
+	border-color: #404040;
+}
+
+.banner-section-four.home-style-nine .swiper-slide .bg-image{
+  display: none;
+}
+
+//body color 
+.header-style-two
+{
+  background-color: unset;
+}
+.services-section-two .outer-box:before
+{
+  background: unset;
+}
+
+//bg image
+
+.counter-block .inner,
+.why-choose-us,
+.about-section-five .bg-wide-map,
+.services-section-four .bg-layer,
+.banner-section-four .slide-item .bg-image:after,
+.contact-section.style-six:before,
+.services-section-five .anim-icons .icon
+{
+  background-image: unset !important;
+}
+
+
+.testimonial-section-two .bg-layer{
+  background-image: url(../images/icons/pattern-8-dark.png);
+}
+
+.fun-fact-section-two .fact-counter:before {
+  background-image: url(../images/icons/Faunfacts.png);
+}
+
+
+.country-block .image::before{
+  background-image: url(../images/icons/curve-dark.png);
+}
+
+.banner-section-four .slide-item .bg-image:after{
+  opacity: .6;
+}
+.about-section .anim-icons .icon,
+.about-section-three::before,
+.testimonial-section .bg-layer:before,
+.why-choose-us-two::before,
+.countries-section .bg-layer,
+.testimonial-section-three .bg-layer,
+.testimonial-section-three.home-style-nine .bg-layer,
+.testimonial-section-three.home-style-nine .bg-layer-2
+{
+  opacity: 0.1;
+}
+
+.testimonial-section.pb-0 .bg-layer:before
+{
+  opacity: .9;
+}
+
+.clients-carousel {
+	.slide-item {
+		img {
+			filter: invert(1);
+		}
+	}
+}
+.clients-section {
+	.slide-item {
+		a {
+			&:hover {
+				background-color: inherit;
+			}
+		}
+	}
+}
+
+// .contact-form {
+// 	.form-group {
+// 		textarea {
+//       color: var(--theme-color-white);
+// 			background-color: var(--dark-color2);
+// 		}
+// 		input {
+//       color: var(--theme-color-white)!important;
+// 			&:not([type=submit]) {        
+// 				background-color: var(--dark-color2);
+// 			}
+// 		}
+// 	}
+// }

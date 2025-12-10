@@ -1,0 +1,122 @@
+//Root
+$text-color: #73787d;
+$headings-color: #222429; 
+
+:root {
+  --theme-color-white: #ffffff;
+  --theme-color-light: #f8f5f0;
+  --theme-color-gray: #f6f6f6;
+  --theme-color-gray-2: #ECEFF4;
+  --theme-color-gray-3: #75727B;
+  --theme-color-gray-4: #F1F1F1;
+  --theme-color-dark: #000000;
+  --theme-color-dark-2: #272E39;
+  --theme-color-dark-3: #182838;
+  --theme-color-dark-4: #121C27;
+  --theme-color-dark-5: #1D2F41;
+  
+
+  //theme color
+  --theme-color1: #cb935d;
+  --theme-color2: #222429;
+  --theme-color3: #1d2f41;
+  --theme-color4: #ecf0f4;
+  --theme-color5: #F5F2F0;
+  --theme-color6: #2F3D4C;
+  --theme-color7: #232331;
+
+  --theme-color1-rgb: 203, 147, 93;
+  --theme-color2-rgb: 34, 36, 41;
+  --theme-color3-rgb: 29, 47, 65;
+  --theme-color4-rgb: 17, 27, 38;
+  --theme-color-dark-rgb: 0, 0, 0;
+  --theme-color-white-rgb: 255, 255, 255;
+
+  --bg-theme-color1: var(--theme-color1);
+  --bg-theme-color2: var(--theme-color2);
+  --bg-theme-color3: var(--theme-color3);
+  --bg-theme-color4: var(--theme-color4);
+
+  --border-theme-color1: var(--theme-color1);
+  --border-theme-color2: var(--theme-color2);
+  --border-theme-color3: var(--theme-color3);
+  --border-theme-color4: var(--theme-color4);
+
+  --text-color-bg-theme-color1: #fff;
+  --text-color-bg-theme-color2: #fff;
+  --text-color-bg-theme-color3: #fff;
+  --text-color-bg-theme-color4: #fff;
+
+
+  //Gradients
+  --gradient-1: linear-gradient(to right, rgba(29, 47, 65, 1) 0%, rgba(255, 73, 74, 0.5) 50%, rgba(29, 47, 65, 0) 100%);
+  --gradient-2: linear-gradient(to right, var(--theme-color2), var(--theme-color1));
+  --gradient-3: linear-gradient(to top, var(--theme-color2), var(--theme-color1));
+  --gradient-4: linear-gradient(to top, var(--theme-color1), var(--theme-color2));
+  --gradient-5: linear-gradient(270deg, rgba(var(--theme-color1-rgb), 0.8) 0%, rgba(var(--theme-color-dark-rgb), 0.8) 100%);
+  --gradient-6: linear-gradient(to left, var(--theme-color2), var(--theme-color1));
+  --gradient-7: linear-gradient(270deg, rgba(29, 47, 65, 0.66) 0%, rgba(7, 21, 36, 0.95) 54.5%);
+
+  //text heading color
+  --text-color:         #{$text-color};
+  --headings-color:     #{$headings-color};
+  --link-color:         var(--theme-color1);
+  --link-hover-color:   var(--theme-color1);
+
+  //font family
+  --text-font: "DM Sans", sans-serif;
+  --title-font: "Playfair Display", serif;
+  --style-font: 'Reey';
+  --style-font-2: 'Cormorant Infant';
+  --style-font-3: 'Mulish';
+
+  //body
+  --body-font-size:   16px;
+  --body-line-height: 30px;
+  --body-font-weight: 400;
+
+  //heading font size + weight
+  --line-height-heading-h1: 1em;
+  --line-height-heading: 1.25em;
+  --line-height-heading-small: 1.4em;
+
+  --h1-font-size: 90px;
+  --h2-font-size: 48px;
+  --h3-font-size: 30px;
+  --h4-font-size: 24px;
+  --h5-font-size: 20px;
+  --h6-font-size: 18px;
+
+  --h1-font-weight: 700;
+  --h2-font-weight: 700;
+  --h3-font-weight: 700;
+  --h4-font-weight: 700;
+  --h5-font-weight: 700;
+  --h6-font-weight: 700;
+
+  //section sub title
+  --sec-title-subtitle-color: var(--text-color);
+  --sec-title-subtitle-font-size: 14px;
+  --sec-title-subtitle-font-family: var(--text-font);
+  --sec-title-subtitle-font-weight: 700;
+  --sec-title-subtitle-line-height: 1.2em;
+
+  //section title
+  --sec-title-color:                 var(--headings-color);
+  --sec-title-font-size:             var(--h2-font-size);
+  --sec-title-font-family:           var(--title-font);
+  --sec-title-font-weight:           var(--h2-font-weight);
+
+  //news details page
+  --theme-light-background: #f8f6f1;
+  --theme-light-background-text-color: var(--headings-color);
+  --theme-black:        #222429;
+
+
+  //container
+  --container-width: 1200px;
+  --small-container-width: 1000px;
+  --large-container-width: 1550px;
+  --container-pt:    120px;
+  --container-pb:    120px;
+}

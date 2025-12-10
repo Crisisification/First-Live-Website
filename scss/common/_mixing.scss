@@ -1,0 +1,165 @@
+// stylelint-disable property-disallowed-list
+@mixin transition($transition...) {
+  @if length($transition) == 0 {
+    $transition: $transition-base;
+  }
+
+  @if length($transition) > 1 {
+    @each $value in $transition {
+      @if $value == null or $value == none {
+        @warn "The keyword 'none' or 'null' must be used as a single argument.";
+      }
+    }
+  }
+
+  @if nth($transition, 1) != null {
+    transition: $transition;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin vertical-center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@mixin absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@mixin absolute-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@mixin absolute-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin absolute-bottom-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin Shadow {
+  box-shadow: 0 10px 60px rgba(0, 0, 0, .07);
+}
+
+@mixin breakpoint($point) {
+	@if $point==xsmall {
+		@media (min-width: 450px) {
+			@content;
+		}
+	} @else if $point==max-xxsmall {
+		@media (max-width: 450px) {
+			@content;
+		}
+	}
+	@if $point==xxs {
+		@media (min-width: 470px) {
+			@content;
+		}
+	} @else if $point==max-xxs {
+		@media (max-width: 470px) {
+			@content;
+		}
+	}
+	@if $point==xs {
+		@media (min-width: 500px) {
+			@content;
+		}
+	} @else if $point==max-xs {
+		@media (max-width: 500px) {
+			@content;
+		}
+	}
+	@if $point==sm {
+		@media (min-width: 576px) {
+			@content;
+		}
+	} @else if $point==max-sm {
+		@media (max-width: 575px) {
+			@content;
+		}
+	} @else if $point==md {
+		@media (min-width: 768px) {
+			@content;
+		}
+	} @else if $point==max-md {
+		@media (max-width: 767px) {
+			@content;
+		}
+	} @else if $point==lg {
+		@media (min-width: 992px) {
+			@content;
+		}
+	} @else if $point==max-lg {
+		@media (max-width: 991px) {
+			@content;
+		}
+	} @else if $point==xl {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	} @else if $point==max-xl {
+		@media (max-width: 1199px) {
+			@content;
+		}
+	} @else if $point==xxl {
+		@media (min-width: 1400px) {
+			@content;
+		}
+	} @else if $point==max-xxl {
+		@media (max-width: 1399px) {
+			@content;
+		}
+	} @else if $point==xxxl {
+		@media (min-width: 1600px) {
+			@content;
+		}
+	} @else if $point==max-xxxl {
+		@media (max-width: 1600px) {
+			@content;
+		}
+	} @else if $point==x4l {
+		@media (min-width: 1800px) {
+			@content;
+		}
+	} @else if $point==max-x4l {
+		@media (max-width: 1800px) {
+			@content;
+		}
+	}
+}

@@ -1,0 +1,197 @@
+/*** 
+
+====================================================================
+		Call To Action
+====================================================================
+
+***/
+
+.call-to-action{
+  position: relative;
+  background-color: var(--theme-color3);
+  z-index: 2;
+  &.style-two {
+    background-color: var(--theme-color1);
+    .inner-container {
+      @include media-breakpoint-down(md){
+        display: block;
+        text-align: center;
+      }
+      .title {
+        @include media-breakpoint-down(md){
+          margin-bottom: 20px;
+        }
+      }
+      .info-btn {
+        @include media-breakpoint-down(md){
+          margin-left: 0;
+          padding: 10px 15px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .inner-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+  }
+  .title{
+    font-size: 20px;
+    color: var(--theme-color-white);
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+  .info-btn{
+    position: relative;
+    background-color: var(--theme-color2);
+    padding: 15px 40px;
+    line-height: 24px;
+    font-size: 18px;
+    color: var(--theme-color-white);
+    margin-left: 30px;
+    transition: all 300ms ease;
+    i{
+      margin-right: 10px;
+    }
+    &:hover{
+      background-color: var(--theme-color-white);
+      color: var(--theme-color1);
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+		Call To Action Two
+====================================================================
+
+***/
+
+.call-to-action-two{
+  position: relative;
+  z-index: 2;
+  padding: 120px 0 120px;
+  @include background;
+  &:before{
+    @include overlay;
+    background-color: rgba(var(--theme-color-dark-rgb), .7);
+    content: "";
+  }
+  &.pull-up2{
+    margin-top: -120px;
+    padding-top: 180px;
+  }
+  .title-box{
+    position: relative;
+    @include media-breakpoint-down(lg){
+      text-align: center;
+      margin-bottom: 70px;
+    }
+    .title {
+      font-size: 48px;
+      color: var(--theme-color-white);
+      margin-bottom: 40px;
+      font-weight: 500;
+      @include media-breakpoint-down(xl){
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .video-box{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    @include media-breakpoint-down(lg){
+      justify-content: center;
+    }
+    .inner{
+      position: relative;
+      padding-left: 130px;
+      padding-top: 70px;
+    }
+    .play-now-two{
+      border-color:var(--theme-color-white);
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .arrow{
+      position: absolute;
+      left: 110px;
+      top: 0;
+    }
+    .title{
+      font-weight: 400;
+      color: var(--theme-color-white);
+      margin-bottom: 10px;
+    }
+    .sub-title{
+      font-size: 20px;
+      color: #aab3bb;
+    }
+  }
+}
+
+/*** 
+
+====================================================================
+    Call To Action Three
+====================================================================
+
+***/
+
+.call-to-action-three {
+  .inner-content {
+    background-color: var(--theme-color3);
+    position: relative;
+    padding: 52px 50px 54px;
+    margin-bottom: -116px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    @include media-breakpoint-down(lg){
+      padding: 52px 20px 54px;
+    }
+    @include media-breakpoint-down(md){
+      display: block;
+      text-align: center;
+    }
+    &:after {
+      background-color: #193C56;
+      content: "";
+      height: 13px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 100%;
+    }
+    .title {
+      color: var(--theme-color-white);
+      font-size: 30px;
+      letter-spacing: .2px;
+      line-height: 1.2;
+      margin-bottom: 0;
+      @include media-breakpoint-down(md){
+        br {
+          display: none;
+        }
+      }
+    }
+    .btn-box {
+      display: inline-block;
+      margin-left: 30px;
+      @include media-breakpoint-down(lg){
+        margin-left: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+}
