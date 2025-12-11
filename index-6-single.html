@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Based PC | Legal Associates</title>
+<title>Based PC | Modern Legal Solutions</title>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
@@ -62,6 +62,17 @@
     .theme-btn.btn-style-one.btn-inverted:hover span {
         color: #ffffff !important;
     }
+	/* CUSTOM PRELOADER - OVERRIDE TEMPLATE */
+    .preloader {
+        background-color: #ffffff !important;
+        background-image: none !important; /* Hides the old logo */
+    }
+    
+    /* Hide the template's spinning animations/blue boxes */
+    .preloader::after, 
+    .preloader::before {
+        display: none !important; 
+    }
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
@@ -80,7 +91,10 @@
 <div class="page-wrapper">
 
 	<!-- Preloader -->
-	<div class="preloader"></div>
+	<div class="preloader" style="display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 999999;">
+		<img src="images/Based_PC_Logo_Text.png" alt="Based PC" style="max-width: 350px; height: auto;">
+		<h3 style="color: #3E4AB8; margin-top: 20px; font-weight: bold; letter-spacing: 2px; font-family: sans-serif;">LOADING...</h3>
+	</div>
 
 	<!-- Main Header-->
 	<header class="main-header header-style-one">
@@ -92,7 +106,7 @@
 					<!-- Info List -->
 					<ul class="list-style-one">
 						<li><i class="fa fa-envelope"></i> <a href="mailto:info@basedpc.com">info@basedpc.com</a></li>
-						<li><i class="fa fa-map-marker"></i>595 Sheppard Ave E, Toronto, ON</li>
+						<li><i class="fa fa-map-marker"></i>Unit 203-595 Sheppard Ave E, Toronto, ON</li>
 					</ul>
 				</div>
 
@@ -298,7 +312,7 @@
 							data-y="['middle','middle','middle','middle']"
 							data-textalign="['top','top','top','top']"
 							data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-							<h1>The Future of<span class="color1">Justice</span><br>is <span class="color1">Based PC</span></h1>
+							<h1>The Future of <span class="color1">Justice</span><br>is <span class="color1">Based PC</span></h1>
 						</div>
 
 						<div class="tp-caption" data-paddingbottom="[0,0,0,0]"
@@ -481,7 +495,7 @@
                         <div class="about-block">
                             <div class="inner">
                                 <i class="icon flaticon-law-courthouse"></i>
-                                <h5 class="title">We provide clear, accessible legal guidance tailored to your unique needs.</h5>
+                                <h5 class="title">We provide clear and accessible legal guidance tailored to your unique needs.</h5>
                             </div>
                         </div>
                         
@@ -494,9 +508,9 @@
                             </div>
                         </div>
 
-                        <div class="text">At Based PC, we believe law shouldn't be complicated. We combine modern efficiency with deep legal expertise to protect what matters most to you—your family, your business, and your future.</div>
+                        <div class="text" style="margin-bottom: 0px;">At Based PC, we believe law shouldn't be complicated. We combine modern efficiency with deep legal expertise to protect what matters most to you—your family, your business, and your future.</div>
                         
-                        <div class="row mt-4">
+                        <div class="row" style="margin-top: 0px;">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="info-box mb-3">
                                     <div class="inner">
@@ -540,22 +554,23 @@
 						<a href="page-about.html" class="theme-btn btn-style-one light"><span class="btn-title">Explore now</span></a>
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<!--Video play button -->
+				<!-- <div class="col-lg-4">
 					<div class="video-box">
 						<div class="inner">
 							<a href="https://www.youtube.com/watch?v=Fvae8nxzVz4" class="play-now-two alternate lightbox-image"><i class="icon fa fa-play"></i></a>
 							<img src="images/icons/icon-arrow.png" alt="" class="arrow">
 							<h4 class="title style-font">Play Video</h4>
-							<span class="sub-title">Watch training videos</span>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
 	<!-- End Call to Action -->
 
 	<!-- Testimonial Section -->
+	<div style="display: none;">
 	<section id="testimonial" class="testimonial-section style-two pb-0">
 		<div class="bg-layer style-two"></div>
 		<div class="anim-icons">
@@ -660,7 +675,7 @@
 		</div>
 	</section>
 	<!--End Gallery Section -->
-
+	</div>
 	<!-- FAQ Section -->
 	<section class="faqs-section pull-up" style="background-image: url(./images/background/bg2.jpg)">
 		<div class="auto-container">
@@ -670,20 +685,20 @@
 					<div class="inner-column">
 						<div class="sec-title">
 							<span class="sub-title">FREQUENTLY ASKED QUESTIONS</span>
-							<h2>Things you need to know and we know your’s</h2>
+							<h2>Common Questions & <br>Helpful Answers</h2>
 						</div>
 						<div class="info-box">
 							<div class="inner">
 								<i class="icon fa fa-check"></i>
-								<h5 class="title">Inexpensive consultations</h5>
-								<div class="text">Aenean placerat ut lacus nec pulvinar. Donce eu leo ante at commodo diam reader luctus</div>
+								<h5 class="title">Transparent Pricing</h5>
+								<div class="text">No hidden fees. We believe in clear, upfront costs for all our legal services.</div>
 							</div>
 						</div>
 						<div class="info-box">
 							<div class="inner">
 								<i class="icon fa fa-check"></i>
-								<h5 class="title">Top-Notch Lawyers</h5>
-								<div class="text">Aenean placerat ut lacus nec pulvinar. Donce eu leo ante at commodo diam reader luctus</div>
+								<h5 class="title">Expert Guidance</h5>
+								<div class="text">Our team brings years of specialized experience in Corporate, Family, and Estate law.</div>
 							</div>
 						</div>
 					</div>
@@ -695,45 +710,45 @@
 						<ul class="accordion-box wow fadeInRight">
 							<!--Block-->
 							<li class="accordion block active-block">
-								<div class="acc-btn active">How we can help you?
+								<div class="acc-btn active">How do I book a consultation?
 									<div class="icon fa fa-angle-right"></div>
 								</div>
 								<div class="acc-content current">
 									<div class="content">
-										<div class="text">There are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis pulvinar with dapibus It is a long established fact</div>
+										<div class="text">You can book directly through this website by clicking the <a href="#contact">Contact Us</a> button, or give us a call at <a href="tel:+14165725296"><strong>416-572-5296</strong></a>. We offer both in-person and virtual appointments.</div>
 									</div>
 								</div>
 							</li>
 							<!--Block-->
 							<li class="accordion block">
-								<div class="acc-btn">Attorney with experience.
+								<div class="acc-btn">What areas of law do you specialize in?
 									<div class="icon fa fa-angle-right"></div>
 								</div>
 								<div class="acc-content">
 									<div class="content">
-										<div class="text">There are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis pulvinar with dapibus It is a long established fact</div>
+										<div class="text">We specialize in <strong>Corporate Law</strong>, <strong>Real Estate Law</strong>, and <strong>Wills & Estates</strong>. Whether you are incorporating a business, buying a home, or planning your legacy, our team provides expert, personalized guidance.</div>
 									</div>
 								</div>
 							</li>
 							<!--Block-->
 							<li class="accordion block">
-								<div class="acc-btn">We care about the rest
+								<div class="acc-btn">What should I bring to my first meeting?
 									<div class="icon fa fa-angle-right"></div>
 								</div>
 								<div class="acc-content">
 									<div class="content">
-										<div class="text">There are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis pulvinar with dapibus It is a long established fact</div>
+										<div class="text">Please bring a piece of valid government-issued ID and all relevant documents related to your case such as contracts, court orders, or financial statements. This helps us understand your situation immediately and provide accurate advice.</div>
 									</div>
 								</div>
 							</li>
 							<!--Block-->
 							<li class="accordion block">
-								<div class="acc-btn">Unique client experience division
+								<div class="acc-btn">How does your pricing work?
 									<div class="icon fa fa-angle-right"></div>
 								</div>
 								<div class="acc-content">
 									<div class="content">
-										<div class="text">There are many variations of passages of available but the Ut elit tellus luctus nec ullamcorper at mattis pulvinar with dapibus It is a long established fact</div>
+										<div class="text">We believe in transparency. Depending on the service, we offer both flat-rate fees (common for Wills and Incorporations) and competitive hourly rates. We will always discuss and agree upon the fee structure before beginning any work.</div>
 									</div>
 								</div>
 							</li>
@@ -744,8 +759,10 @@
 		</div>
 	</section>
 	<!--End FAQ Section -->
-
+	
+	
 	<!-- Team Section -->
+	<div style="display: none;">
 	<section id="team" class="team-section">
 		<div class="anim-icons">
 			<span class="icon icon-book-3 bounce-x"></span>
@@ -836,8 +853,9 @@
 			</div>
 		</div>
 	</section>
+	</div>
 	<!-- End Team Section -->
-
+	
 	<!-- Why Choose Us -->
 	<section class="why-choose-us" style="background-image: url(./images/icons/pattern-1.png)">
 		<div class="anim-icons">
@@ -850,29 +868,29 @@
 					<div class="inner-column wow fadeInRight">
 						<div class="sec-title">
 							<span class="sub-title">Our benefits</span>
-							<h2>Few Reasons to Choose Our Company.</h2>
-							<div class="text">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem is simply free text quis bibendum.</div>
+							<h2>Why Clients Trust Based PC</h2>
+							<div class="text">We combine deep legal expertise with modern technology to make your experience faster, easier, and more transparent.</div>
 						</div>
 
 						<div class="info-box">
-							<i class="icon flaticon-job-interview"></i>
+							<i class="icon flaticon-global"></i>
 							<span class="sub-title">Benefit 01</span>
-							<h4 class="title">Direct Online Interviews</h4>
-							<a href="page-about.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+							<h4 class="title">Virtual Consultations</h4>
+							<a href="#contact" class="read-more"><i class="fa fa-check"></i></a>
 						</div>
 
 						<div class="info-box">
-							<i class="icon flaticon-approved-1"></i>
+							<i class="icon flaticon-law-contract"></i>
 							<span class="sub-title">Benefit 02</span>
-							<h4 class="title">Quick & Easy Process</h4>
-							<a href="page-about.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+							<h4 class="title">Streamlined Process</h4>
+							<a href="#contact" class="read-more"><i class="fa fa-check"></i></a>
 						</div>
 
 						<div class="info-box">
-							<i class="icon flaticon-law-courthouse"></i>
+							<i class="icon flaticon-low-cost"></i>
 							<span class="sub-title">Benefit 03</span>
-							<h4 class="title">99% Win Percentage</h4>
-							<a href="page-about.html" class="read-more"><i class="fa fa-long-arrow-alt-right"></i></a>
+							<h4 class="title">Transparent Fees</h4>
+							<a href="#contact" class="read-more"><i class="fa fa-check"></i></a>
 						</div>
 					</div>
 				</div>
@@ -890,6 +908,7 @@
 	</section>
 	<!-- End Why Choose Us -->
 
+	<div style="display: none;">
 	<!-- News Section -->
 	<section id="news" class="news-section">
 		<div class="anim-icons">
@@ -960,6 +979,7 @@
 		</div>
 	</section>
 	<!--End News Section -->
+	</div>
 
 	<!--Contact Details Start-->
 	<section id="contact" class="contact-details">
@@ -971,38 +991,43 @@
 						<h2>Feel free to write</h2>
 					</div>
 					<!-- Contact Form -->
-					<form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">
+					<form id="contact_form" action="https://formspree.io/f/xwpgwbpl" method="POST">
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="mb-3">
-									<input name="form_name" class="form-control" type="text" placeholder="Enter Name">
+									<input name="name" class="form-control" type="text" placeholder="Enter Name" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
-									<input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+									<input name="email" class="form-control required email" type="email" placeholder="Enter Email" required>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="mb-3">
-									<input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+									<input name="subject" class="form-control required" type="text" placeholder="Enter Subject">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
-									<input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+									<input name="phone" class="form-control" type="text" placeholder="Enter Phone">
 								</div>
 							</div>
 						</div>
 						<div class="mb-3">
-							<textarea name="form_message" class="form-control required" rows="7" placeholder="Enter Message"></textarea>
+							<textarea name="message" class="form-control required" rows="7" placeholder="Enter Message" required></textarea>
 						</div>
 						<div class="mb-5">
-							<input name="form_botcheck" class="form-control" type="hidden" value="" />
-							<button type="submit" class="theme-btn btn-style-two mb-3 mb-sm-0" data-loading-text="Please wait..."><span class="btn-title">Send message</span></button>
-							<button type="reset" class="theme-btn btn-style-two"><span class="btn-title">Reset</span></button>
+							<input type="text" name="_gotcha" style="display:none">
+							
+							<button type="submit" class="theme-btn btn-style-two mb-3 mb-sm-0">
+								<span class="btn-title">Send Message</span>
+							</button>
+							<button type="reset" class="theme-btn btn-style-two">
+								<span class="btn-title">Reset</span>
+							</button>
 						</div>
 					</form>
 					<!-- Contact Form Validation-->
@@ -1012,21 +1037,21 @@
 						<div class="sec-title">
 							<span class="sub-title">Need any help?</span>
 							<h2>Get in touch with us</h2>
-							<div class="text">Lorem ipsum is simply free text available dolor sit amet consectetur notted adipisicing elit sed do eiusmod tempor incididunt simply dolore magna.</div>
+							<div class="text">Reach out to discuss your legal needs. We look forward to hearing from you.</div>
 						</div>
 						<ul class="list-unstyled contact-details__info">
 							<li class="d-block d-sm-flex align-items-sm-center ">
 								<div class="icon">
-									<span class="far fa-phone-plus"></span>
+									<a href="tel:+14165725296"><span class="far fa-phone-plus"></span></a>
 								</div>
 								<div class="text ml-xs--0 mt-xs-10">
 									<h6>Have any question?</h6>
-									<a href="tel:+14165725296"><span>Free</span>416-572-5296</a>
+									<a href="tel:+14165725296">416-572-5296</a>
 								</div>
 							</li>
 							<li class="d-block d-sm-flex align-items-sm-center ">
 								<div class="icon">
-									<span class="far fa-envelope fa-fw"></span>
+									<a href="mailto:info@basedpc.com"><span class="far fa-envelope fa-fw"></span></a>
 								</div>
 								<div class="text ml-xs--0 mt-xs-10">
 									<h6>Write email</h6>
@@ -1039,7 +1064,7 @@
 								</div>
 								<div class="text ml-xs--0 mt-xs-10">
 									<h6>Visit anytime</h6>
-									<span>595 Sheppard Ave E, Toronto, ON</span>
+									<span>Unit 203-595 Sheppard Ave E, Toronto, ON</span>
 								</div>
 							</li>
 						</ul>
@@ -1052,36 +1077,25 @@
 
 	<!-- Map Section-->
 	<section class="map-section">
-		<iframe  class="map w-100"  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5762.532910170098!2d-79.3867891233596!3d43.76732744504135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2d4c722101c7%3A0x66264f7d7f559866!2s595%20Sheppard%20Ave%20E%2C%20North%20York%2C%20ON%20M2K%200G3!5e0!3m2!1sen!2sca!4v1765470959596!5m2!1sen!2sca" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</section>
 	<!--End Map Section-->
 
 	<!-- Main Footer -->
 	<footer class="main-footer">
 		<div class="auto-container">
-			<div class="upper-box">
-				<div class="logo"><a href="index.html"><img src="images/logo-2.png" alt=""></a></div>
-				<div class="subscribe-form">
-					<h5 class="title">Subscribe to Newsletter</h5>
-					<form method="post" action="#">
-						<div class="form-group">
-							<input type="email" name="email" class="email" value="" placeholder="Email Address" required="">
-							<button type="button" class="theme-btn btn-style-one hover-white"><span class="btn-title">Subscribe</span></button>
-						</div>
-					</form>
-				</div>
-			</div>
+			<div class="upper-box" style="margin-bottom: 0; padding-bottom: 0;"></div> <!--this is to have the line between the map and the footer info-->
 		</div>
 
 		<!--Widgets Section-->
-		<div class="widgets-section">
+		<div class="widgets-section" style="padding-top: 30px;">
 			<div class="auto-container">
 				<div class="row">
 					<!--Footer Column-->
-					<div class="footer-column col-xl-3 col-lg-4">
+					<div class="footer-column col-xl-4 col-lg-4 col-md-12">
 						<div class="footer-widget about-widget">
 							<h5 class="widget-title">Contact</h5>
-							<div class="text">595 Sheppard Ave E,<br>Toronto, On, M2K 0G3</div>
+							<div class="text">Unit 203-595 Sheppard Ave E,<br>Toronto, On, M2K 0G3</div>
 							<ul class="contact-info">
 								<li><i class="fa fa-envelope"></i> <a href="mailto:info@basedpc.com">info@basedpc.com</a><br></li>
 								<li><i class="fa fa-phone-square"></i> <a href="tel:+14165725296">416-572-5296</a><br></li>
@@ -1093,36 +1107,22 @@
 					<div class="footer-column col-xl-6 col-lg-8 col-md-12 mb-0">
 						<div class="footer-widget links-widget">
 							<div class="row">
-								<div class="col-lg-4 col-md-4 col-sm-12">
-									<h5 class="widget-title">Explore</h5>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<h5 class="widget-title">Quick Links</h5>
 									<ul class="user-links">
-										<li><a href="#">About Company</a></li>
-										<li><a href="#">Meet the Team</a></li>
-										<li><a href="#">News & Media</a></li>
-										<li><a href="#">Our Projects</a></li>
-										<li><a href="#">Contact</a></li>
+										<li><a href="#home">Home</a></li>
+										<li><a href="#about">About Us</a></li>
+										<li><a href="#services">Our Services</a></li>
+										<li><a href="#contact">Contact</a></li>
 									</ul>
 								</div>
 
-								<div class="col-lg-4 col-md-4 col-sm-12">
-									<h5 class="widget-title">Law</h5>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<h5 class="widget-title">Practice Areas</h5>
 									<ul class="user-links">
-										<li><a href="#">Student Law</a></li>
-										<li><a href="#">Family Law</a></li>
-										<li><a href="#">Tourist Law</a></li>
-										<li><a href="#">Business Law</a></li>
-										<li><a href="#">Criminal Law</a></li>
-									</ul>
-								</div>
-
-								<div class="col-lg-4 col-md-4 col-sm-12">
-									<h5 class="widget-title">Our Attorneys</h5>
-									<ul class="user-links">
-										<li><a href="#">Maxwell Frost</a></li>
-										<li><a href="#">Isabella Cruz</a></li>
-										<li><a href="#">Oliver Quinn</a></li>
-										<li><a href="#">Victoria Knight</a></li>
-										<li><a href="#">Dominic Archer</a></li>
+										<li><a href="#contact">Corporate Law</a></li>
+										<li><a href="#contact">Real Estate Law</a></li>
+										<li><a href="#contact">Wills & Estates</a></li>
 									</ul>
 								</div>
 							</div>
@@ -1130,7 +1130,7 @@
 					</div>
 
 					<!--Footer Column-->
-					<div class="footer-column col-xl-3 col-lg-4 col-md-6">
+					<div class="footer-column col-xl-3 col-lg-4 col-md-6" style="display:none;">
 						<div class="footer-widget gallery-widget">
 							<h5 class="widget-title">Gallery</h5>
 							<div class="widget-content">
@@ -1165,7 +1165,7 @@
 		<div class="footer-bottom">
 			<div class="auto-container">
 				<div class="inner-container">
-					<div class="copyright-text">&copy; Copyright Reserved by <a href="index.html">kodesolution.com</a>
+					<div class="copyright-text">&copy; 2025 Based PC. All Rights Reserved.</a>
 					</div>
 
 					<ul class="social-icon-two">
